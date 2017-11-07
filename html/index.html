@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/jquery-1.11.1.js"></script>
+		<script src="../js/move.js"></script>
+		<!--<link rel="stylesheet" type="text/css" href="../css/hover.css"/>-->	
+		
+		<!--导航栏的下拉菜单特效-->
+		<script type="text/javascript">
+			$(function(){
+				$('nav .right ul li:nth-of-type(2)').hover(function(){
+					$(this).parents('ul').parents('.right').parents('nav').siblings(".down1").slideDown(500);
+				},function(){
+					$(this).parents('ul').parents('.right').parents('nav').siblings(".down1").slideUp(500);
+				})
+				
+				$('nav .right ul li:nth-of-type(3)').hover(function(){
+					$(this).parents('ul').parents('.right').parents('nav').siblings(".down2").slideDown(500);
+				},function(){
+					$(this).parents('ul').parents('.right').parents('nav').siblings(".down2").slideUp(500);
+				})
+			
+			})
+		</script>
+		
+
+		<!--核心业务-->
+		<script type="text/javascript">
+			$(function(){
+				$('li').hover(function(){
+					$(this).children('.shade').stop().fadeIn(500)
+				},
+				function(){
+					$(this).children('.shade').stop().fadeOut(500);
+				})
+			})
+		</script>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+	<script src="../js/jquery.min.js"></script>
+	<body>
+		<div id="wrap">
+			<div class="top">
+				<div class="img400-num">
+					<img src="../img/400num.jpg"/>
+				</div>
+				<div class="top-right">
+					<a href="javascript:;" class='QQ'>
+						<span class='QQ-icon'></span>
+						<span class='text'>QQ咨询</span>
+					</a>
+					<div class="weixin">
+						<div class="box">
+							<span class='text'>官方微信扫一扫</span>
+							<span class='saomiao'></span>
+						</div>
+						<div class="slide-down-icon" style="display: none;">
+							<img src="../img/qihui-code-img.jpg" style="z-index: 1;"/>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="nav_wrap">
+			<nav>
+				<div class="left">
+					<div class="logo-title">
+						顶尖的移动互联网技术解决方案服务商
+					</div>
+				</div>
+				<div class="right">
+					<ul class='ul1'>
+						<li><a href="javascript:;">首页</a></li>
+						<li><a href="javascript:;">服务</a></li>
+						<li><a href="javascript:;">解决方案</a></li>
+						<li><a href="company_case.html">成功案例</a></li>
+						<li><a href="company_news.html">行业资讯</a></li>
+						<li><a href="">关于启汇</a></li>
+						<li><a href="contact_us.html">联系我们</a></li>
+						<span class='nav_slide'></span>
+					</ul>
+				</div>
+			</nav>
+			<div class="slide_down down1">
+				<div class="slide_down_content">
+					<div class="slide_down_left">
+						<ul>
+							<li style="display: block;"><img src="../img/nav-server-app.png"/></li>
+							<li><img src="../img/nav-server-crm.png"/></li>
+							<li><img src="../img/nav-server-ds.png"/></li>
+							<li><img src="../img/nav-server-more.png"/></li>
+							<li><img src="../img/nav-server-wx.png"/></li>
+						</ul>
+					</div>
+					<div class="slide_down_right">
+						<ol>
+							<li><a href=""><h5>移动APP定制开发</h5><p class="txt-hidden">Android、iOS系统开发，满足移动APP多平台开发需求</p></a></li>
+							<li><a href=""><h5>CRM/ERP开发</h5><p class="txt-hidden">定制企业级CRM/ERP系统，全面提升销售管理效率</p></a></li>
+							<li><a href=""><h5>电商系统开发</h5><p class="txt-hidden">B2B、B2C电商平台，移动商城、分销系统等多类型开发</p></a></li>
+							<li><a href=""><h5>微信定制开发</h5><p class="txt-hidden">公众号、服务号、商城、H5开发，打造企业品牌形象</p></a></li>
+							<li><a href=""><h5>了解更多业务</h5><p class="txt-hidden">包含PC平台定制开发、定制系统开发与维护、系统运维与优化、技术咨询、品牌推广服务</p></a></li>
+						</ol>
+					</div>
+				</div>
+				</div>
+				
+				<div class="slide_down down2">
+					<div class="slide_down_content">
+					<div class="slide_down_left">
+						<ul class='slide_ul'>
+							<li style="display: block;"><img src="../img/nav-jiej-1.png"/></li>
+							<li><img src="../img/nav-jiej-2.png"/></li>
+							<li><img src="../img/nav-jiej-3.png"/></li>
+							<li><img src="../img/nav-jiej-4.png"/></li>
+							<li><img src="../img/nav-jiej-5.jpg"/></li>
+						</ul>
+					</div>
+					<div class="slide_down_right">
+						<ol class='slide_ol'>
+							<li><a href=""><h5>电子商务</h5><p class="txt-hidden">为您定制迎合消费者全渠道购物需求，整合供应链的多元化电子商务定制方案</p></a></li>
+							<li><a href=""><h5>医疗行业</h5><p class="txt-hidden">连接用户、医疗设备、医疗机构以及医疗ISV，致力于构建大健康行业云生态</p></a></li>
+							<li><a href=""><h5>直播行业</h5><p class="txt-hidden">快速开发专属直播APP，高效实现流量变现，快速进入“直播+”时代</p></a></li>
+							<li><a href=""><h5>教育行业</h5><p class="txt-hidden">快速部署、量身定制教育类解决方案，协助您成为教育信息化专家</p></a></li>
+							<li><a href=""><h5>共享充电宝</h5><p class="txt-hidden">提供共享充电宝项目解决方案，定制租赁机柜硬件控制系统与软件系统</p></a></li>
+						</ol>
+					</div>
+				</div>
+				
+			</div>
+			</div>
+			
+			<div class="banner">
+				<ul>
+					<li><img src="../img/index-banner-01.jpg"/></li>
+					<li><img src="../img/index-banner-02.jpg"/></li>
+					<li><img src="../img/index-banner-03.jpg"/></li>
+				</ul>
+				<!--<a href="javascript:;" class="left">&lt;</a>
+				<a href="javascript:;" class="right">&gt;</a>-->
+				<div class="left1">&lt;</div>
+				<div class="right1">&gt;</div>
+				<ol>
+					<li class='active'></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+			
+			<!--<script src="../js/move2.js"></script>-->
+			<script type="text/javascript">
+				window.onload = function(){
+					var left = document.getElementsByClassName('left1')[0];
+					var right = document.getElementsByClassName('right1')[0];
+					var oDiv = document.getElementsByClassName('banner')[0];
+					var aUl = oDiv.getElementsByTagName('ul')[0];
+					var aol = oDiv.getElementsByTagName('ol')[0];
+					var oLis = aUl.getElementsByTagName('li');
+					var aLis = aol.getElementsByTagName('li');
+					
+					var num = 0;
+					var timer = null;
+					
+					clearInterval(timer);
+					timer=setInterval(function(){
+					num++;
+					if(num===3){
+					aUl.style.transition = "0s";
+					aUl.style.left = "0px";
+					num=1;
+					setTimeout(function(){
+						aUl.style.transition = "0.5s";
+						aUl.style.left = num*-1349+"px";
+					},30);
+					
+					num=0;
+					for(var i=0;i<oLis.length;i++){
+						aLis[i].className = ""
+						aUl.style.transition = "0.5s";
+					}
+					aLis[num].className = "active";
+					aUl.style.left = num*-1349+"px";
+//					
+					
+					
+				}else{
+					for(var i=0;i<oLis.length;i++){
+						aLis[i].className = ""
+						if(num===0){
+							num++;
+						}
+					}
+					aLis[num].className = "active";
+					aUl.style.left = num*-1349+"px";
+					
+				}
+			},2000);
+			
+			//鼠标移入
+			oDiv.onmouseover = function(){
+				clearInterval(timer);
+			}
+		
+			
+			//鼠标移出
+			oDiv.onmouseout = function(){
+				clearInterval(timer);
+				timer=setInterval(function(){
+				num++;
+				if(num===3){
+					aUl.style.transition = "0s";
+					aUl.style.left = "0px"
+					aLis[0].className = "active";
+					num=1;
+					setTimeout(function(){
+						aUl.style.transition = "0.5s";
+						aUl.style.left = num*-1349+"px";
+					},30);
+					
+					num=0;
+					for(var i=0;i<oLis.length;i++){
+						aLis[i].className = ""
+						aUl.style.transition = "0.5s";
+					}
+					aLis[num].className = "active";
+					aUl.style.left = num*-1349+"px";
+					
+				}else{
+					for(var i=0;i<oLis.length;i++){
+						aLis[i].className = ""
+						if(num===0){
+							num++;
+						}
+					}
+					aLis[num].className = "active";
+					aUl.style.left = num*-1349+"px";
+				}
+			},2000);
+			}
+			
+			//左按钮
+			left.onclick = function(){
+				num--;
+				if(num===-1){
+					aUl.style.transition = "0s";
+					aUl.style.left = "-1349px";
+					num=2;
+					setTimeout(function(){
+						aUl.style.transition = "0.5s";
+						aUl.style.left = num*-1349+"px";
+					},30);
+					
+						for(var i=0;i<oLis.length;i++){
+						aUl.style.transition = "0.5s";	
+						aLis[i].className = "";
+					}
+					aLis[num].className = "active";
+					aUl.style.left = num*-1349+"px";
+					
+				}else{
+					for(var i=0;i<oLis.length;i++){
+						aLis[i].className = "";
+					}
+					aLis[num].className = "active";
+					aUl.style.left = num*-1349+"px";
+				}
+			}
+
+			//右按钮
+			right.onclick = function(){
+				num++;
+				if(num===3){
+					aUl.style.transition = "0s";
+					aUl.style.left = "0px";
+					num=1;
+					setTimeout(function(){
+						aUl.style.transition = "0.5s";
+						aUl.style.left = num*-1349+"px";
+					},30);
+					
+					num=0;
+					for(var i=0;i<oLis.length;i++){
+						aLis[i].className = ""
+						aUl.style.transition = "0.5s";
+					}
+					aLis[num].className = "active";
+					aUl.style.left = num*-1349+"px";
+					
+				}else{
+					for(var i=0;i<oLis.length;i++){
+						aLis[i].className = ""
+						if(num===0){
+							num++;
+						}
+						
+					}
+					aLis[num].className = "active";
+					aUl.style.left = num*-1349+"px";
+				}
+			}
+			
+			
+			//点击小点
+			for(var i=0;i<aLis.length;i++){
+			aLis[i].index=i;
+			aLis[i].onclick = function(){	
+				for(var j=0;j<aLis.length;j++){
+						aLis[j].className = ""
+					}
+					this.className = "active";
+					aUl.style.left = this.index*-1349+"px";
+					num=this.index;
+			    }
+			}
+			
+			
+					
+				}
+			</script>
+			
+			
+			
+			<div class="box1">
+				<div class="box1_content">
+					<h2>核心业务</h2>
+				<p>一体化的互联网+技术解决方案，让您的项目快速启动、完美落地</p>
+				<ul>
+					<li>
+						<div class="shade">
+							<div class="shade_main">
+								<div class="item-icon">
+									<span class="bg-icon1"></span>
+								</div>
+								<h3>移动APP定制开发</h3>
+								<div class="main_icon">
+									<p class="txt-hidden">Android、iOS系统开发</p>
+									<p class="txt-hidden mb32">满足移动APP多平台开发需求</p>
+									<a class="check-detail-btn" href="" title="">查看详情</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<!--<div class="li_main">
+								<div class="li-icon">
+									<span class="bg-icon2"></span>
+								</div>
+								<h3>CRM/ERP开发</h3>
+						</div>-->
+						<div class="shade">
+							<div class="shade_main">
+								<div class="item-icon">
+									<span class="bg-icon2"></span>
+								</div>
+								<h3>CRM/ERP开发</h3>
+								<div class="main_icon">
+									<p class="txt-hidden">定制企业级CRM/ERP系统</p>
+									<p class="txt-hidden mb32">全面提升销售管理效率</p>
+									<a class="check-detail-btn" href="" title="">查看详情</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="shade">
+							<div class="shade_main">
+								<div class="item-icon">
+									<span class="bg-icon3"></span>
+								</div>
+								<h3>电商系统开发</h3>
+								<div class="main_icon">
+									<p class="txt-hidden">B2B、B2C电商平台、移动商城</p>
+									<p class="txt-hidden mb32">分销系统等多类型开发</p>
+									<a class="check-detail-btn" href="" title="">查看详情</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="shade">
+							<div class="shade_main">
+								<div class="item-icon">
+									<span class="bg-icon4"></span>
+								</div>
+								<h3>微信定制开发</h3>
+								<div class="main_icon">
+									<p class="txt-hidden">公众号、服务号、商城、H5开发</p>
+									<p class="txt-hidden mb32">打造企业品牌形象</p>
+									<a class="check-detail-btn" href="" title="">查看详情</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="shade">
+							<div class="shade_main">
+								<div class="item-icon">
+									<span class="bg-icon5"></span>
+								</div>
+								<h3>了解更多业务</h3>
+								<div class="main_icon">
+									<p class="txt-hidden">PC平台定制开发、定制系统开发与维护</p>
+									<p class="txt-hidden">系统运维与优化、技术咨询</p>
+									<p class="txt-hidden mb32">品牌推广服务</p>
+									<a class="check-detail-btn" href="" title="">查看详情</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				</div>
+				
+			</div>
+			
+			<div class="box2">
+				<div class="box2_content">
+					<h2>服务流程</h2>
+					<p>敏捷运筹，决胜千里。启汇提供互联网+项目全生命周期管理与服务</p>
+					<p>确保您的项目快速落地，顺利运营</p>
+					
+					<ul>
+						<li>
+							<div class="bg-icon2 img1">
+							</div>
+							<p>合同签订</p>
+						</li>
+						<li><div class="bg-icon2 img2">
+							</div>
+							<p>咨询调研</p></li>
+						<li><div class="bg-icon2 img3">
+							</div>
+							<p>产品设计</p></li>
+						<li><div class="bg-icon2 img4">
+							</div>
+							<p>客户体验</p></li>
+						<li><div class="bg-icon2 img5">
+							</div>
+							<p>架构设计</p></li>
+						<li><div class="bg-icon2 img6">
+							</div>
+							<p>产品研发</p></li>
+						<li><div class="bg-icon2 img7">
+							</div>
+							<p>测试</p></li>
+						<li><div class="bg-icon2 img8">
+							</div>
+							<p>部署培训</p></li>
+						<li><div class="bg-icon2 img9">
+							</div>
+							<p>运维</p></li>
+						<li><div class="bg-icon2 img10">
+							</div>
+							<p>运营咨询</p></li>
+					</ul>
+					<ol class="Hr">
+						<li class="hr">
+							
+						</li>
+					</ol>
+		
+				</div>
+			</div>
+			
+			<div class="box3">
+			<!--	<video src="../video/introduction.mp4" class='bg_video'></video>-->
+			<!--uploads/video_image/2017-02-07/20170207173717177.png-->
+			<video muted="true" poster="" 
+				autoplay="true" loop="true" class="bg_video" src="../video/introduction.mp4">
+                    	你的浏览器不支持video
+            </video>
+            
+            <div class="video_shade">
+            	<h3>启汇网络</h3>
+            	<p>顶尖的移动互联网技术解决方案服务商</p>
+            	<a href='../video/introduction.mp4' target="_blank" class="shiping">
+            		点击观看视频
+            	</a>
+            </div>
+			</div>
+			
+			<div class="box4">
+				<div class="box4_content">
+					<h2>行业解决方案</h2>
+					<p>多年技术开发与电子商务行业经验沉淀，集合对二十多个主流行业的深度研究，从根本出发把握您的实际需求</p>
+					<p>做到开发更快捷、更完善，营销更精准、更高效</p>
+				<ul>
+					<li>
+    					<img src="../img/hangye-bg1.jpg" />
+    					<div class="shade_img hvr-shutter-out-horizontal">
+    						
+    					</div>
+						<h3>电子商务</h3>
+						<p class="txt-line2">B2B、B2C、移动电商、社区电商解决方案 </p>
+					</li>
+					<li>
+						<img src="../img/hangye-bg2.jpg"/>
+						<h3>医疗行业</h3>
+						<p class="txt-line2">医院信息化、养老信息化、移动医疗应用解决方案</p>
+					</li>
+					<li>
+						<img src="../img/hangye-bg3.jpg"/>
+						<h3>直播行业</h3>
+						<p class="txt-line2">为企业量身定制高效稳定的视频直播方案，致力打造在线直播教学专家</p>
+					</li>
+					<li>
+						<img src="../img/hangye-bg4.jpg"/>
+						<h3>教育行业</h3>
+						<p class="txt-line2">基于区域化教育环境特色，制定教育行业一体化平台解决方案</p>
+					</li>
+				</ul>
+				<a href='404.html' target="_blank" class="xiangqing">
+					查看更多>>
+				</a>
+				</div>
+			</div>
+			<div class="box5">
+				<div class="context">
+				
+					<h2>客户口碑</h2>
+					<p>启汇网络提供高质量定制方案，赢得各行业客户赞赏，已经成为众多知名品牌的长期合作伙伴</p>
+					
+					
+						<ol class='dian'>
+							<li class='active2'></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ol>
+					<!--<div class="box5_content">-->
+							<div class="btn1_before">
+						&lt;
+					</div>
+					<div class="btn2_after">
+						&gt;
+					</div>
+					<div class="lunbo_wrap">
+						<ul>
+						  <li class="up_content" style='display:block;'>
+							<div class="up_left">
+							<img src="../img/xiandai-1.png"/>
+							</div>
+							<div class="up_middle">
+							<p class="txt1">现代电气 聂总</p>
+							<p>我们在启汇定制的现代电气APP，可以说是完备的<br>互联网商城系统。其为我们提供的解决方案实现了<br>线下体验馆和网上商城平台相结合的一种双线模式。</p>
+							<img class="logo-img" src="../img/index-kuhu-logo3.png" alt="">
+							</div>
+							<div class="up_right">
+								<img src="../img/xiandai-2.png"/>
+							</div>
+						</li>	
+					
+					
+				
+		
+					<li class="up_content">
+						<div class="up_left">
+							<img src="../img/hyb-1.png"/>
+						</div>
+						<div class="up_middle">
+							<p class="txt1">方圆地产 曾总</p>
+							<p>启汇为我们策划定制开发的“海缘宝 APP”，让我们的用户可以及时了解到最新的海外投资资讯，并且，还能在他们投资后随时看到进度和反馈。这个APP让千里之外的投资，成为了触手可及的事情。</p>
+							<img class="logo-img" src="../img/index-kuhu-logo1.png" alt="">
+						</div>
+						<div class="up_right">
+							<img src="../img/hyb-2.png"/>
+						</div>
+						
+					</li>
+					<li class="up_content">
+						<div class="up_left">
+							<img src="../img/malai-1.png"/>
+						</div>
+						<div class="up_middle">
+							<p class="txt1">马来多商 Stanley</p>
+							<p>一直以来，我们都想做一个多店商城系统。启汇专业的技术水平和周全的服务态度，不仅几乎完全实现了我们对Weconnect APP的功能设想，并且从专业出发，提出了构建三级分销平台的建议。</p>
+							<img class="logo-img" src="../img/index-kuhu-logo2.png" alt="">
+						</div>
+						<div class="up_right">
+							<img src="../img/malai-2.png"/>
+						</div>
+					</li>
+					
+					
+					<li class="up_content">
+						<div class="up_left">
+							<img src="../img/pingan-1.png"/>
+						</div>
+						<div class="up_middle">
+							<p class="txt1">平安财险 周总</p>
+							<p>启汇给我们开发的“平安车点点微信服务号”，为我们的所有车主客户提供违章免费代办、违章查询、保单查询、理赔查询等服务，这些功能极大提高了客户们的便利。</p>
+							<img class="logo-img" src="../img/index-kuhu-logo4.png" alt="">
+						</div>
+						<div class="up_right">
+							<img src="../img/pingan-2.png"/>
+						</div>
+						
+				
+					</li>
+					</ul>
+					</div>
+					<!--</div>-->
+				
+					
+				</div>
+			</div>
+			<div class="box6">
+				<div class="box6_content">
+					<h2>合作伙伴</h2>
+					<p>覆盖二十余个主流行业，1000+行业解决方案深度实践，只为助您的项目更好、更快、更省心</p>
+					
+				<ul>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="box7">
+				<div class="box7_content">
+					<h2>行业资讯</h2>
+					<ol>
+						<li><span>iOS APP开发资讯</span><span>更多>></span></li>
+						<li><span>Android APP开发资讯</span><span>更多>></span></li>
+						<li><span>移动UI设计资讯</span><span>更多>></span></li>
+					</ol>
+					<ul class='box7_wrap'>
+						<li>
+							<div class="box7_top">
+							<div class="T_left">
+								<img src="../img/pXhFwSm1pK.png"/>
+							</div>
+							<div class="T_right">
+								<h4><a href="http://www.kapphk.com/appnews/ios_2217/" title="同城快递APP开发，让速递业务“一路直飚”">同城快递APP开发，让速递业务“一路直飚”</a></h4>
+								<p class="txt-line5">&gt;广州快递APP开发定制公司【启汇网络】市场策划负责人Kenneth针对目前同城速递AP...</p>
+							</div>
+						</div>
+						<ul id='T_text'>
+							<li id='txt'><a href=""> 启汇网络专注代驾类APP软件的制作开发</a></li>
+							<li id='txt'><a href=""> 移动游戏类应用软件的开发气息依然很浓郁</a></li>
+							<li id='txt'><a href=""> 启汇网络为你量身定制高端驾校app应用软件</a></li>
+							<li id='txt'><a href=""> 移动手机APP应用软件开发</a></li>
+						</ul>
+						</li>
+						<li>
+							<div class="box7_top">
+							<div class="T_left">
+								<img src="../img/7wLSzPMr2h.png"/>
+							</div>
+							<div class="T_right">
+								<h4><a href="http://www.kapphk.com/appnews/android_2216/" title="共享APP软件开发定制，商业模式发展解答">共享APP软件开发定制，商业模式发展解答</a></h4>
+								<p class="txt-line5">&gt;共享经济席卷全球势不可挡，广州共享APP开发外包公司【启汇网络】来说，共享充电宝加盟模...</p>
+							</div>
+						</div>
+						<ul id='T_text'>
+							<li id='txt'><a href=""> 手机游戏App未来趋势</a></li>
+							<li id='txt'><a href=""> 音乐APP开发也加入共享行列，聊天+音乐共享模式可行吗？</a></li>
+							<li id='txt'><a href=""> 媒体移动化的产物新闻APP</a></li>
+							<li id='txt'><a href=""> 服装APP展示新视觉</a></li>
+						</ul>
+						</li>
+						<li>
+							<div class="box7_top">
+							<div class="T_left">
+								<img src="../img/ngNZTOdG9N.jpg"/>
+							</div>
+							<div class="T_right">
+								<h4><a href="http://www.kapphk.com/appnews/ui_2181/" title="一款APP从零开始开发设计">一款APP从零开始开发设计</a></h4>
+								<p class="txt-line5">&gt;搭建用户和企业之间的意见反馈闭环。让用户在网上帮你做一件事情，最好的方式也许是让他获得...</p>
+							</div>
+						</div>
+						<ul id='T_text'>
+							<li id='txt'><a href=""> 技能GET：调整UI设计稿的三大原则四点技巧</a></li>
+							<li id='txt'><a href=""> APP开发外包公司定制APP UI设计干货</a></li>
+							<li id='txt'><a href=""> 手机APP UI设计到底有多重要</a></li>
+							<li id='txt'><a href=""> 如何利用超时的APP UI设计留住用户</a></li>
+						</ul>
+						</li>
+					</ul>
+					<a href='404.html' class="xiangqing2">
+					查看更多资讯>>
+				</a>
+				</div>
+			</div>
+			<div class="box8">
+				<div class="box8_content">
+					<div class="box8_left">
+						<h2>APP开发常见问题</h2>
+						<ul>
+							<li>
+								<div class="Q clearfix">
+								<div class='icon_Q'>
+									Q
+								</div>
+								<div class='txt_Q'>
+									<h3>
+										<a href="http://www.kapphk.com/appnews/faq_2218/" title="共享充电宝加盟商业模式，未来格局花落谁家">共享充电宝加盟商业模式，未来格局花落谁家</a>
+									</h3>
+								</div>
+							</div>
+							<div class="A clearfix">
+								<div class="icon_A">
+									A
+								</div>
+								<div class="txt_A">
+									<p>广州共享充电宝加盟平台【启汇网络】认为，现在市场已存在的共享充电宝加盟模式发展还是发展平缓的，离共享手机充电宝爆发还需要一个临界点。</p>
+								</div>
+							</div>
+							</li>
+							<li>
+								<div class="Q clearfix">
+								<div class='icon_Q'>
+									Q
+								</div>
+								<div class='txt_Q'>
+									<h3>
+										<a href="http://www.kapphk.com/appnews/faq_2215/" title="启汇网络：APP开发常见误解区域是什么">启汇网络：APP开发常见误解区域是什么</a>
+									</h3>
+								</div>
+							</div>
+							<div class="A clearfix">
+								<div class="icon_A">
+									A
+								</div>
+								<div class="txt_A">
+									<p>一款优秀的APP软件开发过程是复杂，APP定制过程一个细节都会影响最后的成果，广州APP开发外包公司【启汇网络】在APP定制行业拥有多...</p>
+								</div>
+							</div>
+							</li>
+							<li>
+								<div class="Q clearfix">
+								<div class='icon_Q'>
+									Q
+								</div>
+								<div class='txt_Q'>
+									<h3>
+										<a href="http://www.kapphk.com/appnews/faq_100/" title="用智能手机表达我对你的爱">用智能手机表达我对你的爱</a>
+									</h3>
+								</div>
+							</div>
+							<div class="A clearfix">
+								<div class="icon_A">
+									A
+								</div>
+								<div class="txt_A">
+									<p>广州APP开发外包公司【启汇网络】发现，现在很多年轻人都通过APP软件联系，APP应用开发让彼此的联系更加方便，于是很多人想让父母们都用...</p>
+								</div>
+							</div>
+							</li>
+						</ul>
+					</div>
+					<div class="box8_right">
+						<h2>APP最新点评</h2>
+						<div class="contain">
+							<ul>
+							<li class='list'><img src="../img/xiaohongshu.jpg"/></li>
+							<li class='list'><img src="../img/20170223154809832.jpg"/></li>
+							<li class='list'><img src="../img/20170223154320146.jpg"/></li>
+							<li class='list'><img src="../img/20170223153926637.jpg"/></li>
+						</ul>
+						<span></span>
+						</div>
+						
+						<div class="qiehuan">
+							<div class="title">
+								<h3>小红书APP点评</h3>
+							<h3>2017-02-23</h3>
+							</div>
+							
+							<p>在如今网上购物越来越盛行的今天，你是否也渴望着走出国门，将全世界的商店纳入自己的眼中呢？如果你是一个真正的购物达人，那么小红书将会是你在海外开疆拓土的优秀助手！小红书海外购物神器是一款全球数百万达人每日分享用真金白银砸出来的海外购物心...</p>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="footer">
+				<div class="f_wrap">
+					<div class="f_top">
+						<h2>联系我们</h2>
+						<p>您的信任是我们最大的动力！启汇真诚为您服务！</p>
+					</div>
+					<div class='f_bottom'>
+						<div class="f_left">
+						<form action="">
+							<input type="text" name="" id="name" value="" placeholder="您的姓名"/>
+							<input type="tel" name="" id="tel" value="" maxlength="11" placeholder="您的固话/手机"/><br /><br />
+							<input type="tel" name="" id="QQ" value="" maxlength="10" placeholder="您的QQ(选填)"/>
+							<input type="" name="" id="weixin" value="" maxlength="11" placeholder="您的微信(选填)"/>
+							<textarea name="" class='show' rows="" cols="" placeholder="您的需求"></textarea><br /><br />
+							<input type="submit" name="" id="submit" value="提交留言" />
+						</form>
+						</div>
+						<div class="f_right">
+							<ul>
+								<li><span class='f_icon1'></span><p>400-8913-303/020-3836-4050</p></li>
+								<li><span class='f_icon2'></span><p>info@qihuiholding.com</p></li>
+								<li><span class='f_icon3'></span><p>广州市海珠区新港东路1068号中洲中心北塔六楼</p></li>
+								<li><span class='f_icon4'></span><p>8号线琶洲站D出口直走300米</p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class='bottom'>
+				<div class="b_wrap">
+					<div class="b_top">
+						<div class="b_left">
+							<ul class='column1'>
+						<li><a href="" class="tit">集团服务</a></li>
+						<li><a href="">启汇营销</a></li>
+						<li><a href="">加盟合作</a></li>
+					</ul>
+					<ul class="column2">
+						<li><a href="" class="tit">关于启汇</a></li>
+						<li><a href="">公司简介</a></li>
+						<li><a href="">发展历程</a></li>
+						<li><a href="">服务团队</a></li>
+						<li><a href="">资质荣誉</a></li>
+						<li><a href="">最新资讯</a></li>
+					</ul>
+					<ul class="column3">
+						<li><a href="" class="tit">服务</a></li>
+						<li><a href="">移动APP定制开发</a></li>
+						<li><a href="">CRM/ERP开发</a></li>
+						<li><a href="">电商系统开发</a></li>
+						<li><a href="">微信定制开发</a></li>
+						<li><a href="">了解更多业务</a></li>
+						<li><a href="">服务流程</a></li>
+					</ul>
+					<ul class="column4">
+						<li><a href="" class="tit">行业解决方案</a></li>
+						<li><a href="">电子商务</a></li>
+						<li><a href="">医疗行业</a></li>
+						<li><a href="">直播行业</a></li>
+						<li><a href="">教育行业</a></li>
+					</ul>
+					<ul class="column5">
+						<li><a href="" class="tit">联系我们</a></li>
+						<li><a href="">公司地址</a></li>
+						<li><a href="">加入我们</a></li>
+					</ul>
+						</div>
+					
+					
+					<div class="b_right">
+						<p>扫一扫，关注公众号</p>
+						<img src="../img/qihui-code-img.jpg"/>
+						<p class='f_icon'>
+							<span></span>
+							<span>400-8913-303</span>
+						</p>
+					</div>
+					</div>
+					<div class="b_bottom">
+						<ul>
+							<li>友情链接：</li>
+							<li>APP运营工具</li>
+							<li>APP开发</li>
+							<li>电商系统</li>
+							<li>微商城</li>
+							<li>广州APP开发公司</li>
+						</ul>
+						<p>广州启汇营销策划有限公司 Qihui Co,Ltd Copyright  &copy; http://www.kapphk.com/ All Rights Reserved， 粤ICP备13046451号-1
+						<img src="../img/pic.gif"/>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+			//	window.onload = function(){
+				var lis = document.getElementsByClassName('up_content');
+				var oDiv2 = document.getElementsByClassName('context')[0];
+				var btn1 = document.getElementsByClassName('btn1_before')[0];
+				var btn2 = document.getElementsByClassName('btn2_after')[0];
+				var aol2 = document.getElementsByClassName('dian')[0];
+				var ali2 = aol2.getElementsByTagName('li');
+					
+				var num = 0;
+				var timer = null;
+				clearInterval(timer);
+				timer = setInterval(function(){
+					moveImg(lis.length,0)
+				},1000)
+				for(var i=0;i<ali2.length;i++){
+					ali2[i].index = i;
+					ali2[i].onclick = function(){
+						for(var j=0;j<ali2.length;j++){
+							ali2[j].className = ""
+							//up_content[j].style.opacity = "0"
+							lis[j].style.display = "none";
+						}
+						this.className = "active2";
+						//up_content[this.index].style.opacity = "1";
+						lis[this.index].style.display = "block"
+						num = this.index;
+					}
+				}
+				
+				
+				oDiv2.onmouseover = function(){
+					clearInterval(timer);
+				}
+				
+				oDiv2.onmouseout = function(){
+					timer = setInterval(function(){
+						moveImg(lis.length,0)
+					},1000)
+				}
+				
+				
+				btn1.onclick = function(){
+					moveImg(-1,lis.length-1)
+				}
+				
+				btn2.onclick = function(){
+					moveImg(lis.length,0)
+				}
+				
+				function moveImg(iTarget,value){
+					if(iTarget>value){  //
+						num++;
+					}else{
+						num--;   //
+					}
+					if(num===iTarget){
+						num = value;
+					}
+					for(var i=0;i<lis.length;i++){
+						//up_content[i].style.opacity = "0";
+						lis[i].style.display = "none"
+						ali2[i].className = "";
+					}
+					//up_content[num].style.opacity = "1";
+					lis[num].style.display = "block"
+					ali2[num].className = "active2";
+				}
+	//}
+				
+		</script>
+		
+		
+		<script type="text/javascript">
+//		window.onload = function(){
+		//导航条
+		//var oNav = document.getElementsByTagName('nav')[0];
+//		var oDiv = nav.getElementsByClassName('.right')[0];
+		var ul1 = document.getElementsByClassName('ul1')[0];
+		var oLis1 = ul1.getElementsByTagName('li');
+		var span1 = document.getElementsByClassName('nav_slide')[0];
+		
+//		var contain = document.getElementsByClassName('contain')[0];
+//		var oUl1 = contain.getElementsByTagName('ul')[0];
+//		var aLis1 = oUl1.getElementsByTagName('li');
+//		var oSpan = contain.getElementsByTagName('span')[0];
+//		
+		
+		for(var i=0;i<oLis1.length;i++){
+			oLis1[i].index = i;
+			oLis1[i].onmouseover = function(){
+				startMove(span1,{"left":this.index*80})
+			}
+		}
+	
+//		//box8 app最新点评
+//		for(var j=0;j<aLis1.length;j++){
+//			aLis1[j].index = j;
+//			aLis1[j].onmouseover = function(){
+//				startMove(oSpan,{"left":this.index*110});
+//			}
+//		}
+//	}
+</script>
+
+
+<!--导航栏下拉菜单遍历效果-->
+<script type="text/javascript">
+	var slide_ul = document.getElementsByClassName('slide_ul')[0];
+	var lis3 = slide_ul.getElementsByClassName('li');
+	var slide_ol = document.getElementsByClassName('slide_ol')[0];
+	var olis3 = slide_ol.getElementsByClassName('li');
+	
+	for(var i=0;i<olis3.length;i++){
+			olis3[i].index = i;
+			olis3[0].onmouseover = function(){
+			for(var j=0;j<olis3.length;i++){
+				olis3[j].className = "";
+				lis3[j].style.display = "block";
+			}
+			this.className = "active3";
+			lis3[this.index].style.display = "block";
+			num = this.index;
+		}
+	}
+
+</script>
+
